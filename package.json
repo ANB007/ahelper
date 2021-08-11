@@ -17,6 +17,7 @@
     "url": "https://github.com/qiming520/ahelper/issues"
   },
   "homepage": "https://github.com/qiming520/ahelper#readme",
+  "files": [ "lib" ],
   "dependencies": {
     "ts-jest": "^27.0.4",
     "typescript": "^4.3.5"
