@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc --build",
+    "publish": "yarn build && np",
     "test": "jest"
   },
   "repository": {
