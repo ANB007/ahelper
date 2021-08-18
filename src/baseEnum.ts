@@ -5,6 +5,7 @@ export default class BaseEnum {
   constructor(data) {
     const keyMap = {}
     const valueMap = {}
+
     data.forEach(([key, value, text]) => {
       keyMap[key] = value
       valueMap[value] = text
