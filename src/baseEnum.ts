@@ -8,6 +8,7 @@ export default class BaseEnum {
 
     data.forEach(([key, value, text]) => {
       keyMap[key] = value
+
       valueMap[value] = text
     })
 
