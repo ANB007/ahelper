@@ -1,14 +1,38 @@
 {
-  "exclude": ["./node_modules", "./lib", "./test"],
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2017",
     "module": "commonjs",
-    "declaration": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "charset": "utf8",
+    "allowJs": false,
+    "pretty": true,
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strictPropertyInitialization": false,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "inlineSourceMap": true,
+    "importHelpers": true,
+    "baseUrl": "./src",
     "outDir": "lib",
     "rootDir": "./src",
-    "strict": true,
-    "baseUrl": "./src",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
-  }
+    "paths": {
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"],
+    }
+  },
+  "exclude": [
+    "./lib",
+    "./test",
+    "node_modules*"
+  ]
 }
