@@ -24,6 +24,7 @@ export default class BaseEnum {
           if (typeof Array.prototype[propKey] === 'function') {
             return Array.prototype[propKey].bind(target)
           }
+
           return target[propKey]
         }
         return null
