@@ -7,7 +7,6 @@
   "browser": "dist/ahelper.umd.js",
   "scripts": {
     "build": "rollup -c",
-    "gogo": "yarn build && np",
     "test": "jest"
   },
   "repository": {
