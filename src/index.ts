@@ -1,1 +1,3 @@
-export * from './BaseEnum'
+import BaseEnum from './BaseEnum'
+
+export { BaseEnum }
