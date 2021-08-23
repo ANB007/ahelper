@@ -54,3 +54,7 @@ js 工具库，包含一些工具方法、类
    1. 检查网络
    2. 给 github 添加本地 host 代理
    3. 如果开了 vpn，可以配置 git 代理，参考：[https://gist.github.com/chuyik/02d0d37a49edc162546441092efae6a1](https://www.notion.so/02d0d37a49edc162546441092efae6a1)
+
+### TODO
+
+文档编写
