@@ -1,4 +1,4 @@
-// import Proxy from 'es6-proxy-polyfill'
+import Proxy from 'es6-proxy-polyfill'
 
 export default class BaseEnum {
   constructor(data) {

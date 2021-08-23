@@ -7,15 +7,16 @@ import pkg from './package.json'
 export default {
   input: './src/index.ts',
   output: [
-    { file: pkg.browser, format: 'umd', name: 'ahelper' },
-    { file: pkg.main, format: 'cjs' },
-    { file: pkg.module, format: 'es' },
+    { file: pkg.browser, format: 'umd', name: 'ahelper', sourcemap: true },
+    { file: pkg.main, format: 'cjs', sourcemap: true },
+    { file: pkg.module, format: 'es', sourcemap: true },
   ],
   plugins: [
     typescript(),
     resolve(),
     commonjs(),
     babel({
+      extensions: ['.js', '.ts'],
       exclude: 'node_modules/**',
     }),
   ],
