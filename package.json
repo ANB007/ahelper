@@ -23,9 +23,7 @@
     "dist"
   ],
   "dependencies": {
-    "es6-proxy-polyfill": "^2.1.1",
-    "ts-jest": "^27.0.4",
-    "typescript": "^4.3.5"
+    "es6-proxy-polyfill": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -41,6 +39,8 @@
     "jest": "^27.0.6",
     "rollup": "^2.56.2",
     "rollup-plugin-babel": "^4.4.0",
-    "tslib": "^2.3.1"
+    "ts-jest": "^27.0.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.3.5"
   }
 }
