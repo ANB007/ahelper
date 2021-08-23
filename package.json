@@ -1,6 +1,6 @@
 {
   "name": "@anb007/ahelper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "js 工具库",
   "main": "dist/ahelper.cjs.js",
   "module": "dist/ahelper.esm.js",
