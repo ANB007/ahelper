@@ -1,10 +1,13 @@
-/* eslint-disable no-console */
-import Proxy from 'es6-proxy-polyfill'
+// import Proxy from 'es6-proxy-polyfill'
 
 export default class BaseEnum {
   constructor(data) {
     const keyMap = {}
     const valueMap = {}
+
+    if (!Array.isArray(data)) {
+      return []
+    }
 
     data.forEach(([key, value, text]) => {
       keyMap[key] = value
@@ -27,11 +30,10 @@ export default class BaseEnum {
 
           return target[propKey]
         }
-        return null
+        return keyMap[propKey]
       },
-      set(target) {
-        console.warn('不可变对象，禁止设置值')
-        return target
+      set() {
+        throw Error('不可变对象，禁止设置值')
       },
     })
     return ans

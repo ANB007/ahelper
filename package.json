@@ -6,7 +6,7 @@
   "module": "dist/ahelper.esm.js",
   "browser": "dist/ahelper.umd.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && tsc --emitDeclarationOnly --project tsconfig.json",
     "test": "jest"
   },
   "repository": {
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",

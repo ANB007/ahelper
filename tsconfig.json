@@ -11,6 +11,7 @@
     "charset": "utf8",
     "allowJs": false,
     "pretty": true,
+    "declaration": true,
     "noEmitOnError": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
