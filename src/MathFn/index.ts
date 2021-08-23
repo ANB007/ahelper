@@ -5,7 +5,7 @@
 const randomBoolean = (): boolean => Math.random() >= 0.5
 
 /**
- * 检查一个数字是偶数还是奇数
+ * 检查一个数字是否为偶数
  * @param num
  * @returns boolean
  */
